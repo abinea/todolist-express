@@ -157,10 +157,11 @@ export default class Home extends Component {
     itemInfo.endTime = moment(itemInfo.endTime).format('YYYY-MM-DD') //这么解决的
     if (this.state.type == 'add') {      // 调用新增接口
       itemInfo.status = '1'; // 默认是1
+      console.log(itemInfo);
       axios.post('http://127.0.0.1:3333/create', itemInfo)
         .then(response => {
           message.success('任务新增完成');
-8          this.queryData('-1')
+          this.queryData('-1')
           this.setState({
             visible: false,
           });

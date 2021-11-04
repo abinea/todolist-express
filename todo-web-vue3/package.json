@@ -1,0 +1,19 @@
+{
+  "name": "vue-forum",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "element-plus": "^1.1.0-beta.24",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
+  }
+}
